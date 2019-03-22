@@ -1,5 +1,14 @@
-task hello {
-  doLast {
-    println "This is my Hello World project"
-  }
-}  
+apply plugin: 'application'
+
+repositories
+{
+   mavenCentral()
+}
+
+dependencies
+{
+   compile 'joda-time:joda-time:2.1'
+}
+
+mainClassName = 'com.demoProject.HelloWorld'
+ 
