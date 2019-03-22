@@ -1,5 +1,3 @@
-package com.demoProject;
-
 import org.joda.time.LocalTime;
 public class HelloWorld
 {
