@@ -1,10 +1,10 @@
-import org.joda.time.LocalTime;
+package com.demoProject
+
 public class HelloWorld
 {
-	public static void main(String args[])
+	public void printMsg()
 	{
-		LocalTime time=new LocalTime();
-		System.out.println("Local Time is: "+ time);
 		System.out.println("This is a Hello World project");
 	}
+
 }
