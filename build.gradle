@@ -1,6 +1,6 @@
 apply plugin: 'java'
 
-repositories
+/*repositories
 {
    mavenCentral()
 }
@@ -11,4 +11,5 @@ dependencies
 }
 
 mainClassName = 'HelloWorld'
+*/
  
