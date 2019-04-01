@@ -1,0 +1,14 @@
+apply plugin: 'application'
+
+repositories
+{
+   mavenCentral()
+}
+
+dependencies
+{
+   testcompile 'junit:junit:4.11'
+}
+
+mainClassName = 'HelloWorld'
+ 
