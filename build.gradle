@@ -7,7 +7,7 @@ repositories
 
 dependencies
 {
-   testcompile 'junit:junit:4.11'
+   testcompile 'junit:junit:4.12'
 }
 
 mainClassName = 'HelloWorld'
