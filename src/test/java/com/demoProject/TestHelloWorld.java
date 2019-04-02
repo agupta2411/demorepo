@@ -14,8 +14,8 @@ public class TestHelloWorld
 	{
 		System.out.println("This is a Test Msg");
 		HelloWorld obj=new HelloWorld();
-		
-		assertEquals(obj.printMsg(),"This is a Hello World project");
+		String msg=obj.printMsg()
+		assertEquals(msg,"This is a Hello World project");
 	}
 
 	@After
