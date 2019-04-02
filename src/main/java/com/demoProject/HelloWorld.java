@@ -2,9 +2,17 @@ package com.demoProject
 
 public class HelloWorld
 {
-	public void printMsg()
+	public static void main(String args[])
 	{
 		System.out.println("This is a Hello World project");
+	}	
+}	
+	
+	
+/*	public void printMsg()
+	{
+		
 	}
 
 }
+*/
