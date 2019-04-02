@@ -2,9 +2,10 @@ package com.demoProject;
 
 public class HelloWorld
 {
-	public String printMsg()
+	public String Hello ( String str )
 	{
-		System.out.println("This is a Hello World project");
-	}
+        	System.out.println("Hello" + str );
+        	return str;
+    	} 
 
 }
