@@ -9,7 +9,7 @@ publishing
     {
         maven
         {
-            url  "${artifactory_contextUrl}/"+ (version.contains('SNAPSHOT') ? 'libs-snapshot-local' : 'libs-release-local')
+            url  "$https://artifactoryg01dy.jfrog.io/artifactoryg01dy/webapp/ankitalocalRepo"+ (version.contains('SNAPSHOT') ? 'libs-snapshot-local' : 'libs-release-local')
                 credentials
                 {
                     username "${artifactory_user}"
@@ -25,7 +25,7 @@ repositories
 
         maven
         {
-            url "${artifactory_contextUrl}/libs-release"
+            url "https://artifactoryg01dy.jfrog.io/artifactoryg01dy/webapp/ankitalocalRepo/libs-release"
             credentials
             {
                 username "${artifactory_user}"
