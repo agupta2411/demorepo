@@ -1,6 +1,23 @@
 apply plugin: 'application'
-apply plugin: 'com.jfrog.artifactory'
+/*  apply plugin: 'com.jfrog.artifactory'  */
 apply plugin: 'maven-plugin'
+
+publishing
+{
+    repositories
+    {
+       maven
+       {
+           url  "https://artifactoryg01dy.jfrog.io/artifactoryg01dy/webapp/#/artifacts/browse/tree/General/ankitalocalRepo/"+ (version.contains('SNAPSHOT') ? 'libs-snapshot-local' : 'libs-release-local')
+           credentials
+           {
+              username "admin"
+              password "Do4Te3Xf4Wv3Vl"
+           }
+       }
+    }
+}    
+
 
 repositories
 {
