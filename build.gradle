@@ -1,7 +1,7 @@
 apply plugin: 'application'
-/*  apply plugin: 'com.jfrog.artifactory' */
-apply plugin: 'maven-publish'
 apply plugin: 'maven'
+apply plugin: 'maven-publish'
+apply plugin: 'com.jfrog.artifactory'
 
 mainClassName = 'com.demoProject.HelloWorld'   
 
