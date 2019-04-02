@@ -3,21 +3,7 @@ apply plugin: 'application'
 apply plugin: 'maven-publish'
 apply plugin: 'maven'
 
-publishing
-{
-    repositories
-    {
-        maven
-        {
-            url  "https://artifactoryg01dy.jfrog.io/artifactoryg01dy/webapp/ankitalocalRepo"+ (version.contains('SNAPSHOT') ? 'libs-snapshot-local' : 'libs-release-local')
-                credentials
-                {
-                    username "admin"
-                    password "Do4Te3Xf4Wv3Vl"
-                }     
-        }
-    }
-}    
+mainClassName = 'com.demoProject.HelloWorld'   
 
 repositories
 {
@@ -44,6 +30,39 @@ dependencies
    testCompile 'junit:junit:4.12'
 }
 
-mainClassName = 'com.demoProject.HelloWorld' 
+  
+
+artifactory {
+    contextUrl = "${artifactory_contextUrl}"   //The base Artifactory URL if not overridden by the publisher/resolver
+    publish {
+        repository {
+            repoKey = 'ankitalocalRepo'
+            username = "${artifactory_user}"
+            password = "${artifactory_password}"
+            maven = true  
+       }
+       defaults {
+            publications ('mavenJava')
+        }
+    }
+  }
+
+
+publishing
+{
+    repositories
+    {
+        maven
+        {
+            url  "https://artifactoryg01dy.jfrog.io/artifactoryg01dy/webapp/ankitalocalRepo"+ (version.contains('SNAPSHOT') ? 'libs-snapshot-local' : 'libs-release-local')
+                credentials
+                {
+                    username "admin"
+                    password "Do4Te3Xf4Wv3Vl"
+                }     
+        }
+    }
+}
+
 
  
