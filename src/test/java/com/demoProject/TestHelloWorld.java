@@ -1,4 +1,4 @@
-package com.demoProject
+package com.demoProject;
 
 import static org.junit.Assert.*;
 
@@ -13,7 +13,7 @@ public class TestHelloWorld
 	public void printTestMsg()
 	{
 		System.out.println("This is a Test Msg");
-		HelloWorld obj=new HelloWorld()
+		HelloWorld obj=new HelloWorld();
 		
 		assertEquals(obj.printMsg(),"This is a Hello World project");
 	}
