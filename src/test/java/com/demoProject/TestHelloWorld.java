@@ -1,26 +1,16 @@
 package com.demoProject;
 
-import static org.junit.Assert.*;
-
 import org.junit.Test;
-import org.junit.After;
-
-    
+import static org.junit.Assert.*;
+ 
 public class TestHelloWorld
 {
-	
-	@Test
-	public String printTestMsg()
+  	@Test
+  	public void TestHelloWorld()
 	{
-		System.out.println("This is a Test Msg");
-		HelloWorld obj=new HelloWorld();
-		String msg=obj.printMsg();
-		assertEquals(msg,"This is a Hello World project");
-	}
-
-	@After
-         public void after() 
-	{
-        	System.out.println("After Test Case");
-    	}
+      		HelloWorld h = new HelloWorld();
+      		String str = "World";
+ 
+     		 assertEquals(str, h.Hello(str));
+  	}
 }
