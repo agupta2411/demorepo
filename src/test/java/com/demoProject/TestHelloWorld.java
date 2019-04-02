@@ -9,7 +9,7 @@ import org.junit.After;
 public class TestHelloWorld
 {
 	
-	@ActualTest
+	@Test
 	public void printTestMsg()
 	{
 		System.out.println("This is a Test Msg");
