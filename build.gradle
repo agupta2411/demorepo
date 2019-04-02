@@ -10,6 +10,6 @@ dependencies
    testCompile 'junit:junit:4.12'
 }
 
-/* mainClassName = 'HelloWorld' */
+mainClassName = 'com.demoProject.HelloWorld' 
 
  
