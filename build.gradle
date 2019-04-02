@@ -50,16 +50,9 @@ artifactory {
 
 publishing
 {
-    repositories
-    {
-        maven
-        {
-            url  "https://artifactoryg01dy.jfrog.io/artifactoryg01dy/webapp/ankitalocalRepo"+ (version.contains('SNAPSHOT') ? 'libs-snapshot-local' : 'libs-release-local')
-                credentials
-                {
-                    username "admin"
-                    password "Do4Te3Xf4Wv3Vl"
-                }     
+    publications {
+        mavenJava(MavenPublication) {
+            from components.java
         }
     }
 }
