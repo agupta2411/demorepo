@@ -9,7 +9,7 @@ publishing
     {
         maven
         {
-            url  "$https://artifactoryg01dy.jfrog.io/artifactoryg01dy/webapp/ankitalocalRepo"+ (version.contains('SNAPSHOT') ? 'libs-snapshot-local' : 'libs-release-local')
+            url  "https://artifactoryg01dy.jfrog.io/artifactoryg01dy/webapp/ankitalocalRepo"+ (version.contains('SNAPSHOT') ? 'libs-snapshot-local' : 'libs-release-local')
                 credentials
                 {
                     username "admin"
