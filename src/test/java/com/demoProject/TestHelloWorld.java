@@ -10,7 +10,7 @@ public class TestHelloWorld
 {
 	
 	@Test
-	public void printTestMsg()
+	public String printTestMsg()
 	{
 		System.out.println("This is a Test Msg");
 		HelloWorld obj=new HelloWorld();
