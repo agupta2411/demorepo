@@ -12,8 +12,8 @@ publishing
             url  "$https://artifactoryg01dy.jfrog.io/artifactoryg01dy/webapp/ankitalocalRepo"+ (version.contains('SNAPSHOT') ? 'libs-snapshot-local' : 'libs-release-local')
                 credentials
                 {
-                    username "${artifactory_user}"
-                    password "${artifactory_password}"
+                    username "admin"
+                    password "Do4Te3Xf4Wv3Vl"
                 }     
         }
     }
@@ -28,8 +28,8 @@ repositories
             url "https://artifactoryg01dy.jfrog.io/artifactoryg01dy/webapp/ankitalocalRepo/libs-release"
             credentials
             {
-                username "${artifactory_user}"
-                password "${artifactory_password}"
+                username "admin"
+                password "Do4Te3Xf4Wv3Vl"
             }
         }
 }   
