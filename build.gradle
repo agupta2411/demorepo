@@ -1,7 +1,16 @@
+buildscript {
+  repositories {
+    jcenter()
+  }
+  dependencies {
+    classpath "org.jfrog.buildinfo:build-info-extractor-gradle:4.4.0"
+  }
+}
+
 apply plugin: 'application'
 apply plugin: 'maven'
 apply plugin: 'maven-publish'
-apply plugin: 'com.jfrog.artifactory' version '4.9.3'
+apply plugin: 'com.jfrog.artifactory' 
 
 mainClassName = 'com.demoProject.HelloWorld'   
 
